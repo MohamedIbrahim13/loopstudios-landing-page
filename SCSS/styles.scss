@@ -1,0 +1,125 @@
+@import "variables";
+@import "mixins";
+
+@include mQ(576px) {}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $fontSize;
+    font-family: $headFont;
+    height: 100%;
+    min-height: 100vh;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $bodyFont;
+}
+
+header {
+
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    @include mQ(576px) {
+        min-height: 60vh;
+        background-image: url("../images/desktop/image-hero.jpg");
+    }
+
+    ul {
+        text-transform: uppercase;
+
+        @include mQ(576px) {
+            text-transform: capitalize;
+        }
+    }
+
+    li a {
+        color: $White;
+
+        @include mQ(576px) {
+
+            color: $White;
+
+        }
+
+
+    }
+
+}
+
+p {
+    color: $DarkGray;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#interactive {
+    margin-right: auto;
+    margin-left: auto;
+
+    @include mQ(576px) {
+        overflow: visible;
+    }
+
+    .interactive {
+
+        @include mQ(576px) {
+            display: flex;
+            position: relative;
+        }
+    }
+
+    .img-interactive {
+        width: 100%;
+
+        @include mQ(576px) {
+            max-width: 60%;
+        }
+    }
+
+    .text-interactive {
+        @include mQ(576px) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 53%;
+            padding-left: 5%;
+            height: 55%;
+            border-radius: 0 !important;
+        }
+
+    }
+}
+
+footer {
+    background: $Black;
+
+    a {
+
+        color: $White;
+
+        &:hover {
+            color: $White;
+            border-bottom: 1.5px solid $White;
+        }
+    }
+
+
+}

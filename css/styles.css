@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  height: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+@media screen and (min-width: 576px) {
+  header {
+    min-height: 60vh;
+    background-image: url("../images/desktop/image-hero.jpg");
+  }
+}
+header ul {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 576px) {
+  header ul {
+    text-transform: capitalize;
+  }
+}
+header li a {
+  color: white;
+}
+@media screen and (min-width: 576px) {
+  header li a {
+    color: white;
+  }
+}
+
+p {
+  color: #8c8c8c;
+}
+
+a {
+  text-decoration: none;
+}
+
+#interactive {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 576px) {
+  #interactive {
+    overflow: visible;
+  }
+}
+@media screen and (min-width: 576px) {
+  #interactive .interactive {
+    display: flex;
+    position: relative;
+  }
+}
+#interactive .img-interactive {
+  width: 100%;
+}
+@media screen and (min-width: 576px) {
+  #interactive .img-interactive {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 576px) {
+  #interactive .text-interactive {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 53%;
+    padding-left: 5%;
+    height: 55%;
+    border-radius: 0 !important;
+  }
+}
+
+footer {
+  background: black;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
+  border-bottom: 1.5px solid white;
+}
